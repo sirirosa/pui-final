@@ -1,0 +1,205 @@
+body {
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+#emotionsTextData p {
+    font-family: Poppins;
+    font-size: 28px;
+    padding: 4px;
+    border: 1px;
+    border-color: black;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-bottom: 40px;
+    margin-right: 25px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+div.button {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonLabel {
+    display: inline;
+}
+
+button:focus {
+    text-decoration: underline;
+}
+
+#sadnessButton:focus {
+    text-decoration: underline blue;
+}
+
+#angerButton:focus {
+    text-decoration: underline red;
+}
+
+#fearButton:focus {
+    text-decoration: underline purple;
+}
+
+#surpriseButton:focus {
+    text-decoration: underline orange;
+}
+
+#loveButton:focus {
+    text-decoration: underline pink;
+}
+
+#happyButton:focus {
+    text-decoration: underline yellow;
+}
+
+.sadness-text:hover {
+    background-color: blue;
+}
+
+.anger-text:hover {
+    background-color: red;
+}
+
+.fear-text:hover {
+    background-color: purple;
+}
+
+.surprise-text:hover {
+    background-color: orange;
+}
+
+.love-text:hover {
+    background-color: pink;
+}
+
+.happy-text:hover {
+    background-color: yellow;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+/* .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px; */
+
+/* Position the tooltip text - see examples below!
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+/* .tooltip:hover .tooltiptext {
+  visibility: visible;
+} */
+
+/* test 
+
+$max-width: 100%;
+$max-height: 200px;
+$item-height: 50px;
+
+body{
+  font-family: 'Avenir';
+  font-weight: 800;
+  text-transform: uppercase;
+}
+#scroll-container{
+  overflow: hidden;
+  max-width: $max-width;
+  margin: auto;
+  height: 50vh;
+  top: 25vh;
+  position: relative;
+  min-height: $max-height;
+}
+.wrap-container{
+  position: relative;
+  max-height: $max-height;
+  width: 100%;
+  max-width: $max-width;
+  margin: auto;
+  /* background: #eee; */
+/* overflow: auto;
+  padding-right: 20px; // hides scrollbar
+  mask: url(#masking);
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, 
+   color-stop(0.5,  rgba(0,0,0,1)),
+   color-stop(1,  rgba(0,0,0,0)));
+  
+  ul {
+    list-style: none;
+    position: relative;
+    transition: transform .3s;
+    top: $item-height;
+  }
+  ul, ul li{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  ul li{
+    height: $item-height;
+    line-height: $item-height;
+    transition: transform .3s;
+    overflow: hidden;
+        
+    &:last-of-type{
+      padding-bottom: $item-height;
+    }
+        
+    &.active{
+      .item{
+        transform: scale(1.9);
+      }
+    }
+  }
+  ul li .item{
+    position: relative;
+    transition: transform 200ms;
+    display: inline-block;
+  }
+*/
+
+.buttonLabel:hover {
+    display: inline-block;
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+}
+
+/* This changes all the animations globally */
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}
+

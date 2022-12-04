@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="Emotion_final.json"></script>
+    <script src="js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <title>Emotions</title>
+
+    <!-- cursor -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+</head>
+
+</body>
+    <script src="https://unpkg.com/kursor"></script>
+    <script>
+        new kursor({
+            type: 1
+        })
+    </script>
+
+    <!-- animate -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+
+    <div class="button">
+
+        <div class="buttonLabel">
+            <button type="button" onclick="resetButton()" id="allButton" autofocus>all.</button>
+        </div>
+
+        <div class="buttonLabel">
+            <button type="button" onclick="sadnessButton()" id="sadnessButton"
+                class="animate__animated animate__bounce">sadness.</button>
+        </div>
+
+        <div class="buttonLabel">
+            <button type="button" onclick="angerButton()" id="angerButton">anger.</button>
+        </div>
+
+        <div class="buttonLabel">
+            <button type="button" onclick="fearButton()" id="fearButton">fear.</button>
+        </div>
+
+        <div class="buttonLabel">
+            <button type="button" onclick="surpriseButton()" id="surpriseButton">surprise.</button>
+        </div>
+
+        <div class="buttonLabel">
+            <button type="button" onclick="loveButton()" id="loveButton">love.</button>
+        </div>
+
+        <div class="buttonLabel">
+            <button type="button" onclick="happyButton()" id="happyButton">happiness.</button>
+        </div>
+
+    </div>
+
+    <div id="emotionsTextData"></div>
+    
+</body>
+
+</html>
