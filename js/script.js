@@ -5,25 +5,51 @@ function resetButton() {
 
     for (let i in textData) {
         let node = document.createElement("p");
+        let emojiSection = document.createElement("span"); 
+        emojiSection.style.visibility = "hidden";
         node.innerText = textData[i].Text;
 
         if (textData[i].Emotion == "sadness") {
             node.classList.add("sadness-text");
+            emojiSection.innerText = " Sadness 😓";
+            node.appendChild(emojiSection);
+            node.onmouseout = function() {this.querySelector("span").style.visibility="hidden"};
+            node.onmouseover = function() {this.querySelector("span").style.visibility="visible"};
         }
         else if (textData[i].Emotion == "anger") {
             node.classList.add("anger-text");
+            emojiSection.innerText = " Anger 😡";
+            node.appendChild(emojiSection);
+            node.onmouseout = function() {this.querySelector("span").style.visibility="hidden"};
+            node.onmouseover = function() {this.querySelector("span").style.visibility="visible"};
         }
         else if (textData[i].Emotion == "fear") {
             node.classList.add("fear-text");
+            emojiSection.innerText = " Fear 😳";
+            node.appendChild(emojiSection);
+            node.onmouseout = function() {this.querySelector("span").style.visibility="hidden"};
+            node.onmouseover = function() {this.querySelector("span").style.visibility="visible"};
         }
         else if (textData[i].Emotion == "surprise") {
             node.classList.add("surprise-text");
+            emojiSection.innerText = " Surprise 😮";
+            node.appendChild(emojiSection);
+            node.onmouseout = function() {this.querySelector("span").style.visibility="hidden"};
+            node.onmouseover = function() {this.querySelector("span").style.visibility="visible"};
         }
         else if (textData[i].Emotion == "love") {
             node.classList.add("love-text");
+            emojiSection.innerText = " Love 🥰";
+            node.appendChild(emojiSection);
+            node.onmouseout = function() {this.querySelector("span").style.visibility="hidden"};
+            node.onmouseover = function() {this.querySelector("span").style.visibility="visible"};
         }
         else if (textData[i].Emotion == "happy") {
             node.classList.add("happy-text");
+            emojiSection.innerText = " Happiness 😄";
+            node.appendChild(emojiSection);
+            node.onmouseout = function() {this.querySelector("span").style.visibility="hidden"};
+            node.onmouseover = function() {this.querySelector("span").style.visibility="visible"};
         }
 
         document.querySelector("#emotionsTextData").appendChild(node);

@@ -42,47 +42,52 @@ button:focus {
 }
 
 #sadnessButton:focus {
-    text-decoration: underline blue;
+    text-decoration: underline #2870C5;
 }
 
 #angerButton:focus {
-    text-decoration: underline red;
+    text-decoration: underline #E11F1F;
 }
 
 #fearButton:focus {
-    text-decoration: underline purple;
+    text-decoration: underline #7920D2;
 }
 
 #surpriseButton:focus {
-    text-decoration: underline orange;
+    text-decoration: underline #E87A15;
 }
 
 #loveButton:focus {
-    text-decoration: underline pink;
+    text-decoration: underline #ED23D9;
 }
 
 #happyButton:focus {
-    text-decoration: underline yellow;
+    text-decoration: underline #E8D425;
 }
 
 .sadness-text:hover {
-    background-color: blue;
+    background-color: #2870C5;
+    color: white;
 }
 
 .anger-text:hover {
-    background-color: red;
+    background-color: #E11F1F;
+    color: white;
 }
 
 .fear-text:hover {
-    background-color: purple;
+    background-color: #7920D2;
+    color: white;
 }
 
 .surprise-text:hover {
-    background-color: orange;
+    background-color: #E87A15;
+    color: white;
 }
 
 .love-text:hover {
-    background-color: pink;
+    background-color: #ED23D9;
+    color: white;
 }
 
 .happy-text:hover {
@@ -96,94 +101,6 @@ button:focus {
     border-bottom: 1px dotted black;
     /* If you want dots under the hoverable text */
 }
-
-/* Tooltip text */
-/* .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px; */
-
-/* Position the tooltip text - see examples below!
-  position: absolute;
-  z-index: 1;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-/* .tooltip:hover .tooltiptext {
-  visibility: visible;
-} */
-
-/* test 
-
-$max-width: 100%;
-$max-height: 200px;
-$item-height: 50px;
-
-body{
-  font-family: 'Avenir';
-  font-weight: 800;
-  text-transform: uppercase;
-}
-#scroll-container{
-  overflow: hidden;
-  max-width: $max-width;
-  margin: auto;
-  height: 50vh;
-  top: 25vh;
-  position: relative;
-  min-height: $max-height;
-}
-.wrap-container{
-  position: relative;
-  max-height: $max-height;
-  width: 100%;
-  max-width: $max-width;
-  margin: auto;
-  /* background: #eee; */
-/* overflow: auto;
-  padding-right: 20px; // hides scrollbar
-  mask: url(#masking);
-  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, 
-   color-stop(0.5,  rgba(0,0,0,1)),
-   color-stop(1,  rgba(0,0,0,0)));
-  
-  ul {
-    list-style: none;
-    position: relative;
-    transition: transform .3s;
-    top: $item-height;
-  }
-  ul, ul li{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  ul li{
-    height: $item-height;
-    line-height: $item-height;
-    transition: transform .3s;
-    overflow: hidden;
-        
-    &:last-of-type{
-      padding-bottom: $item-height;
-    }
-        
-    &.active{
-      .item{
-        transform: scale(1.9);
-      }
-    }
-  }
-  ul li .item{
-    position: relative;
-    transition: transform 200ms;
-    display: inline-block;
-  }
-*/
 
 .buttonLabel:hover {
     display: inline-block;
