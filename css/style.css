@@ -2,7 +2,7 @@ body {
     margin-right: 200px;
     margin-left: 200px;
 }
-/* test */
+
 #emotionsTextData p {
     font-family: Poppins;
     font-size: 28px;
@@ -13,7 +13,7 @@ body {
     margin-bottom: 20px;
 }
 
-button {
+/* button {
     margin-bottom: 40px;
     margin-right: 25px;
     border: none;
@@ -31,13 +31,13 @@ div.button {
     padding-top: 50px;
     display: flex;
     flex-direction: row;
-}
+} */
 
-.buttonLabel {
+/* .buttonLabel {
     display: inline;
-}
+} */
 
-button:focus {
+#allButton:focus {
     text-decoration: underline;
 }
 
@@ -120,3 +120,45 @@ button:focus {
     --animate-delay: 0.9s;
 }
 
+
+/* @media screen and (max-width: 1229px) {
+    div.container-fluid {
+      font-size: 12px;
+    } */
+    /* body {
+        display: flex;
+        flex-direction: reverse;
+        } */
+    /* #emotionsTextData {
+        display: flex;
+        flex-direction: column;
+        max-width: 60%; */
+    /* }
+} */
+
+/* @media screen and (max-width: 320px) {
+    div.button {
+      display: flex;
+      flex-direction: column;
+    }
+    body {
+        display: flex;
+        flex-direction: reverse;
+        }
+    #emotionsTextData {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+
+div.container-fluid {
+    font-family: "Poppins";
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+.nav-item {
+    font-size: 50px;
+}
