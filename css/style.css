@@ -158,7 +158,25 @@ div.container-fluid {
     margin-right: 100px;
 }
 
-
 .nav-item {
     font-size: 50px;
+}
+
+.text-hover{
+    background-color: black;
+    color: white;
+    position: absolute;
+    padding: 10px;
+    padding-bottom: 0px;
+    visibility: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-fluid {
+    margin-left: 6%;
+    padding-left: 0%;
+}
+
+.container {
+    margin-left: 5%;
 }

@@ -1,55 +1,72 @@
 resetButton();
 
+let labelBox = document.querySelector('.text-hover');
+const onMouseMove = (e) => {
+    labelBox.style.left = e.pageX + 2 + 'px';
+    labelBox.style.top = e.pageY + 2 + 'px';
+}
+document.addEventListener('mousemove', onMouseMove);
+
 function resetButton() {
     document.querySelector("#emotionsTextData").innerHTML = "";
 
     for (let i in textData) {
         let node = document.createElement("p");
-        let emojiSection = document.createElement("span"); 
-        emojiSection.style.visibility = "hidden";
         node.innerText = textData[i].Text;
 
         if (textData[i].Emotion == "sadness") {
             node.classList.add("sadness-text");
-            emojiSection.innerText = " Sadness 😓";
-            node.appendChild(emojiSection);
-            node.onmouseout = function() {this.querySelector("span").style.visibility="hidden"};
-            node.onmouseover = function() {this.querySelector("span").style.visibility="visible"};
+            node.onmouseout = function () { 
+            document.querySelector(".text-hover").style.visibility = "hidden"; };
+            node.onmouseover = function () { 
+            document.querySelector(".text-hover").style.visibility = "visible";
+            document.querySelector(".semantic-label").innerText = "Sadness 😓";
+            }
         }
         else if (textData[i].Emotion == "anger") {
             node.classList.add("anger-text");
-            emojiSection.innerText = " Anger 😡";
-            node.appendChild(emojiSection);
-            node.onmouseout = function() {this.querySelector("span").style.visibility="hidden"};
-            node.onmouseover = function() {this.querySelector("span").style.visibility="visible"};
+            node.onmouseout = function () { 
+                document.querySelector(".text-hover").style.visibility = "hidden"; };
+            node.onmouseover = function () { 
+                document.querySelector(".text-hover").style.visibility = "visible";
+                document.querySelector(".semantic-label").innerText = "Anger 😠";
+                }
         }
         else if (textData[i].Emotion == "fear") {
             node.classList.add("fear-text");
-            emojiSection.innerText = " Fear 😳";
-            node.appendChild(emojiSection);
-            node.onmouseout = function() {this.querySelector("span").style.visibility="hidden"};
-            node.onmouseover = function() {this.querySelector("span").style.visibility="visible"};
+            node.onmouseout = function () { 
+                document.querySelector(".text-hover").style.visibility = "hidden"; };
+            node.onmouseover = function () { 
+                document.querySelector(".text-hover").style.visibility = "visible";
+                document.querySelector(".semantic-label").innerText = "Fear 😨";
+                }
         }
         else if (textData[i].Emotion == "surprise") {
             node.classList.add("surprise-text");
-            emojiSection.innerText = " Surprise 😮";
-            node.appendChild(emojiSection);
-            node.onmouseout = function() {this.querySelector("span").style.visibility="hidden"};
-            node.onmouseover = function() {this.querySelector("span").style.visibility="visible"};
+            node.onmouseout = function () { 
+                document.querySelector(".text-hover").style.visibility = "hidden"; };
+            node.onmouseover = function () { 
+                document.querySelector(".text-hover").style.visibility = "visible";
+                document.querySelector(".semantic-label").innerText = "Surprise 😮";
+                }
         }
         else if (textData[i].Emotion == "love") {
             node.classList.add("love-text");
-            emojiSection.innerText = " Love 🥰";
-            node.appendChild(emojiSection);
-            node.onmouseout = function() {this.querySelector("span").style.visibility="hidden"};
-            node.onmouseover = function() {this.querySelector("span").style.visibility="visible"};
+            node.onmouseout = function () { 
+                document.querySelector(".text-hover").style.visibility = "hidden"; };
+            node.onmouseover = function () { 
+                document.querySelector(".text-hover").style.visibility = "visible";
+                document.querySelector(".semantic-label").innerText = "Love 🥰";
+                }
         }
         else if (textData[i].Emotion == "happy") {
             node.classList.add("happy-text");
-            emojiSection.innerText = " Happiness 😄";
-            node.appendChild(emojiSection);
-            node.onmouseout = function() {this.querySelector("span").style.visibility="hidden"};
-            node.onmouseover = function() {this.querySelector("span").style.visibility="visible"};
+            node.onmouseout = function () { 
+                document.querySelector(".text-hover").style.visibility = "hidden"; };
+            node.onmouseover = function () { 
+                document.querySelector(".text-hover").style.visibility = "visible";
+                document.querySelector(".semantic-label").innerText = "Happy 😀";
+                }
         }
 
         document.querySelector("#emotionsTextData").appendChild(node);
@@ -134,7 +151,7 @@ function happyButton() {
     }
 }
 
-new Kursor({
-  type: 1 /* 1 | 2 | 3 | 4 | 5 */
-})
+// new Kursor({
+//   type: 1 /* 1 | 2 | 3 | 4 | 5 */
+// })
 
