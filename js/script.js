@@ -10,11 +10,13 @@ document.addEventListener('mousemove', onMouseMove);
 function resetButton() {
     document.querySelector("#emotionsTextData").innerHTML = "";
 
-    for (let i in textData) {
+    for (let i=0; i<20; i++) {
+        let randomIndex = Math.floor(Math.random()*(textData.length+1));
+        let i = textData[randomIndex];
         let node = document.createElement("p");
-        node.innerText = textData[i].Text;
+        node.innerText = i.Text;
 
-        if (textData[i].Emotion == "sadness") {
+        if (i.Emotion == "sadness") {
             node.classList.add("sadness-text");
             node.onmouseout = function () { 
             document.querySelector(".text-hover").style.visibility = "hidden"; };
@@ -23,7 +25,7 @@ function resetButton() {
             document.querySelector(".semantic-label").innerText = "Sadness 😓";
             }
         }
-        else if (textData[i].Emotion == "anger") {
+        else if (i.Emotion == "anger") {
             node.classList.add("anger-text");
             node.onmouseout = function () { 
                 document.querySelector(".text-hover").style.visibility = "hidden"; };
@@ -32,7 +34,7 @@ function resetButton() {
                 document.querySelector(".semantic-label").innerText = "Anger 😠";
                 }
         }
-        else if (textData[i].Emotion == "fear") {
+        else if (i.Emotion == "fear") {
             node.classList.add("fear-text");
             node.onmouseout = function () { 
                 document.querySelector(".text-hover").style.visibility = "hidden"; };
@@ -41,7 +43,7 @@ function resetButton() {
                 document.querySelector(".semantic-label").innerText = "Fear 😨";
                 }
         }
-        else if (textData[i].Emotion == "surprise") {
+        else if (i.Emotion == "surprise") {
             node.classList.add("surprise-text");
             node.onmouseout = function () { 
                 document.querySelector(".text-hover").style.visibility = "hidden"; };
@@ -50,7 +52,7 @@ function resetButton() {
                 document.querySelector(".semantic-label").innerText = "Surprise 😮";
                 }
         }
-        else if (textData[i].Emotion == "love") {
+        else if (i.Emotion == "love") {
             node.classList.add("love-text");
             node.onmouseout = function () { 
                 document.querySelector(".text-hover").style.visibility = "hidden"; };
@@ -59,7 +61,7 @@ function resetButton() {
                 document.querySelector(".semantic-label").innerText = "Love 🥰";
                 }
         }
-        else if (textData[i].Emotion == "happy") {
+        else if (i.Emotion == "happy") {
             node.classList.add("happy-text");
             node.onmouseout = function () { 
                 document.querySelector(".text-hover").style.visibility = "hidden"; };
@@ -76,8 +78,10 @@ function resetButton() {
 
 function sadnessButton() {
     document.querySelector("#emotionsTextData").innerHTML = "";
+    let count = 0;
     for (let i in textData) {
         if (textData[i].Emotion == "sadness") {
+            count++;
             let node = document.createElement("p");
             node.innerText = textData[i].Text;
             document.querySelector("#emotionsTextData").appendChild(node);
@@ -85,21 +89,13 @@ function sadnessButton() {
     }
 }
 
-function sadnessButton() {
-    document.querySelector("#emotionsTextData").innerHTML = "";
-    for (let i in textData) {
-        if (textData[i].Emotion == "sadness") {
-            let node = document.createElement("p");
-            node.innerText = textData[i].Text;
-            document.querySelector("#emotionsTextData").appendChild(node);
-        }
-    }
-}
 
 function angerButton() {
     document.querySelector("#emotionsTextData").innerHTML = "";
+    let count = 0;
     for (let i in textData) {
         if (textData[i].Emotion == "anger") {
+            count++;
             let node = document.createElement("p");
             node.innerText = textData[i].Text;
             document.querySelector("#emotionsTextData").appendChild(node);
@@ -109,8 +105,10 @@ function angerButton() {
 
 function fearButton() {
     document.querySelector("#emotionsTextData").innerHTML = "";
+    let count = 0;
     for (let i in textData) {
         if (textData[i].Emotion == "fear") {
+            count++;
             let node = document.createElement("p");
             node.innerText = textData[i].Text;
             document.querySelector("#emotionsTextData").appendChild(node);
@@ -120,8 +118,10 @@ function fearButton() {
 
 function surpriseButton() {
     document.querySelector("#emotionsTextData").innerHTML = "";
+    let count = 0;
     for (let i in textData) {
         if (textData[i].Emotion == "surprise") {
+            count++;
             let node = document.createElement("p");
             node.innerText = textData[i].Text;
             document.querySelector("#emotionsTextData").appendChild(node);
@@ -131,8 +131,10 @@ function surpriseButton() {
 
 function loveButton() {
     document.querySelector("#emotionsTextData").innerHTML = "";
+    let count = 0;
     for (let i in textData) {
         if (textData[i].Emotion == "love") {
+            count++;
             let node = document.createElement("p");
             node.innerText = textData[i].Text;
             document.querySelector("#emotionsTextData").appendChild(node);
@@ -142,16 +144,14 @@ function loveButton() {
 
 function happyButton() {
     document.querySelector("#emotionsTextData").innerHTML = "";
+    let count = 0;
     for (let i in textData) {
         if (textData[i].Emotion == "happy") {
+            count++;
             let node = document.createElement("p");
             node.innerText = textData[i].Text;
             document.querySelector("#emotionsTextData").appendChild(node);
         }
     }
 }
-
-// new Kursor({
-//   type: 1 /* 1 | 2 | 3 | 4 | 5 */
-// })
 

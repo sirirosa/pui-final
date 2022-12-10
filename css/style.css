@@ -13,56 +13,38 @@ body {
     margin-bottom: 20px;
 }
 
-/* button {
-    margin-bottom: 40px;
-    margin-right: 25px;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    font-family: Poppins;
-    font-weight: 800;
-    font-size: 36px;
-}
-
-div.button {
-    background-color: white;
-    position: sticky;
-    top: 0;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: row;
-} */
-
-/* .buttonLabel {
-    display: inline;
-} */
-
 #allButton:focus {
-    text-decoration: underline;
+    background-color: black;
+    color: white;
 }
 
 #sadnessButton:focus {
-    text-decoration: underline #2870C5;
+    background-color: #2870C5;
+    color: white;
 }
 
 #angerButton:focus {
-    text-decoration: underline #E11F1F;
+    background-color: #E11F1F;
+    color: white;
 }
 
 #fearButton:focus {
-    text-decoration: underline #7920D2;
+    background-color: #7920D2;
+    color: white;
 }
 
 #surpriseButton:focus {
-    text-decoration: underline #E87A15;
+    background-color: #E87A15;
+    color: white;
 }
 
 #loveButton:focus {
-    text-decoration: underline #ED23D9;
+    background-color: #ED23D9;
+    color: white;
 }
 
 #happyButton:focus {
-    text-decoration: underline #E8D425;
+    background-color: #FDDA0D;
 }
 
 .sadness-text:hover {
@@ -91,10 +73,10 @@ div.button {
 }
 
 .happy-text:hover {
-    background-color: yellow;
+    background-color: #FDDA0D;
 }
 
-/* Tooltip container */
+/* tooltip container */
 .tooltip {
     position: relative;
     display: inline-block;
@@ -120,38 +102,6 @@ div.button {
     --animate-delay: 0.9s;
 }
 
-
-/* @media screen and (max-width: 1229px) {
-    div.container-fluid {
-      font-size: 12px;
-    } */
-    /* body {
-        display: flex;
-        flex-direction: reverse;
-        } */
-    /* #emotionsTextData {
-        display: flex;
-        flex-direction: column;
-        max-width: 60%; */
-    /* }
-} */
-
-/* @media screen and (max-width: 320px) {
-    div.button {
-      display: flex;
-      flex-direction: column;
-    }
-    body {
-        display: flex;
-        flex-direction: reverse;
-        }
-    #emotionsTextData {
-        display: flex;
-        flex-direction: column;
-    }
-} */
-
-
 div.container-fluid {
     font-family: "Poppins";
     margin-left: 100px;
@@ -175,8 +125,10 @@ div.container-fluid {
 .container-fluid {
     margin-left: 6%;
     padding-left: 0%;
+    margin-bottom: 10px;
 }
 
 .container {
     margin-left: 5%;
 }
+
