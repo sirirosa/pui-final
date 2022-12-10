@@ -92,7 +92,7 @@ body {
 }
 
 /* changes all animations globally */
-:root {
+.nav-item:root {
     --animate-duration: 800ms;
     --animate-delay: 0.9s;
 }
