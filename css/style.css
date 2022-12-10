@@ -1,7 +1,7 @@
 body {
     margin-right: 200px;
     margin-left: 200px;
-    font-family: "Poppins";
+    font-family: 
 }
 
 #emotionsTextData p {
@@ -81,7 +81,7 @@ body {
     background-color: #FDDA0D;
 }
 
-nav-link:hover {
+.nav-item:hover {
     display: inline-block;
     animation: bounce;
     animation-duration: 2s;
@@ -93,7 +93,7 @@ nav-link:hover {
 }
 
 /* changes all animations globally */
-.nav-item:root {
+:root {
     --animate-duration: 800ms;
     --animate-delay: 0.9s;
 }
