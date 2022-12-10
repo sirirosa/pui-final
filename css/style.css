@@ -4,7 +4,7 @@ body {
 }
 
 #emotionsTextData p {
-    font-family: "Poppins" san-serif;
+    font-family: "Poppins";
     font-size: 28px;
     padding: 4px;
     border: 1px;
@@ -117,7 +117,7 @@ div.container-fluid {
 
 .container {
     margin-left: 5%;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins";
     font-size: 12px;
 }
 
