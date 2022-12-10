@@ -4,7 +4,7 @@ body {
 }
 
 #emotionsTextData p {
-    font-family: Poppins;
+    font-family: Poppins san-serif;
     font-size: 28px;
     padding: 4px;
     border: 1px;
@@ -12,6 +12,8 @@ body {
     margin: 5px;
     margin-bottom: 20px;
 }
+
+/* button styling after clicked */
 
 #allButton:focus {
     background-color: black;
@@ -47,6 +49,8 @@ body {
     background-color: #FDDA0D;
 }
 
+/* text styling when hovered over */
+
 .sadness-text:hover {
     background-color: #2870C5;
     color: white;
@@ -76,31 +80,24 @@ body {
     background-color: #FDDA0D;
 }
 
-/* tooltip container */
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-    /* If you want dots under the hoverable text */
-}
-
-.buttonLabel:hover {
+.nav-link:hover {
     display: inline-block;
     animation: bounce;
-    /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s;
-    /* don't forget to set a duration! */
 }
 
+/* animate.css library */ 
 .animate__animated.animate__bounce {
     --animate-duration: 2s;
 }
 
-/* This changes all the animations globally */
+/* changes all animations globally */
 :root {
     --animate-duration: 800ms;
     --animate-delay: 0.9s;
 }
+
+/* bootstrap navbar */ 
 
 div.container-fluid {
     font-family: "Poppins";
@@ -111,6 +108,19 @@ div.container-fluid {
 .nav-item {
     font-size: 50px;
 }
+.container-fluid {
+    margin-left: 6%;
+    padding-left: 0%;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-left: 5%;
+    font-family: Poppins;
+    font-size: 12px;
+}
+
+/* hover popup */
 
 .text-hover{
     background-color: black;
@@ -122,13 +132,4 @@ div.container-fluid {
     font-family: "Poppins", sans-serif;
 }
 
-.container-fluid {
-    margin-left: 6%;
-    padding-left: 0%;
-    margin-bottom: 10px;
-}
-
-.container {
-    margin-left: 5%;
-}
 

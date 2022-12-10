@@ -49,10 +49,12 @@
 
 <body>
 
+    <!-- hover popup tooltip -->
     <div class="text-hover">
         <p class="semantic-label">Sad</p>
     </div>
-
+    
+    <!-- bootstrap navbar library -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -68,7 +70,7 @@
                             autofocus>all.</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="sadnessButton()" id="sadnessButton">sadness.</a>
+                        <a class="nav-link" href="#" onclick="sadnessButton()" class="animate__animated animate__bounce" id="sadnessButton" >sadness.</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" onclick="angerButton()" id="angerButton">anger.</a>
@@ -89,10 +91,13 @@
             </div>
         </div>
     </nav>
+
+    <!-- text pulled from json file -->
     <div class="container">
         <div id="emotionsTextData"></div>
+        <!-- crediting the source -->
+        <body> Texts from https://www.kaggle.com/datasets/ishantjuyal/emotions-in-text?select=Emotion_final.csv </body> 
     </div>
-
 
 </body>
 
