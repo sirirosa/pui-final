@@ -81,7 +81,7 @@ body {
     background-color: #FDDA0D;
 }
 
-.buttonLabel:hover {
+nav-link:hover {
     display: inline-block;
     animation: bounce;
     animation-duration: 2s;
