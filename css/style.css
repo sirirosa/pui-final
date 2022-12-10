@@ -4,7 +4,7 @@ body {
 }
 
 #emotionsTextData p {
-    font-family: Poppins san-serif;
+    font-family: "Poppins" san-serif;
     font-size: 28px;
     padding: 4px;
     border: 1px;
@@ -80,7 +80,7 @@ body {
     background-color: #FDDA0D;
 }
 
-.nav-link:hover {
+.buttonLabel:hover {
     display: inline-block;
     animation: bounce;
     animation-duration: 2s;
@@ -108,15 +108,16 @@ div.container-fluid {
 .nav-item {
     font-size: 50px;
 }
-.container-fluid {
-    margin-left: 6%;
+
+div.container-fluid {
+    margin-left: 5%;
     padding-left: 0%;
     margin-bottom: 10px;
 }
 
 .container {
     margin-left: 5%;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 12px;
 }
 
